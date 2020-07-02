@@ -5,63 +5,32 @@
   Time: 7:23
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page contentType="text/html; charset=gb2312" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>鏄剧ず鐢ㄦ埛淇℃伅</title>
-  <style>
-    .box{
-      width: 700px;
-      margin: 100px auto;
-    }
-    table{
-      width: 700px;
-      border-spacing: 0px;
-      border-top: 1px solid #000;
-      border-left: 1px solid #000;
-      margin-top: 5px;
-    }
-
-    table tr th , table tr td {
-      border: 1px solid #000;
-      border-left: none;
-      border-top: none;
-      text-align:center;
-    }
-  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>无标题文档</title>
 </head>
+
 <body>
-<a href="/AddUserPageServlet">娣诲姞</a>
-<table>
-  <thead>
-  <tr>
-    <th>id</th><th>鐢ㄦ埛鍚�</th><th>鍑虹敓鏃ユ湡</th><th colspan="2">鍔熻兘</th>
-  </tr>
-  </thead>
-  <tbody>
-  <c:forEach var="user" items="${users}">
-    <tr>
-      <td>${user.id}</td>
-      <td>${user.userName}</td>
-      <td>${user.userBirthdate}</td>
-        <%--                    <td>淇敼</td>--%>
-        <%--                    <td>鍒犻櫎</td>--%>
-      <td><a href="/UpdateUserPageServlet?id=${user.id}">淇敼</a></td>
-        <%--                   &lt;%&ndash; <td><a href="/UpdateBookPageServlet?id=${book.id}/&bookName=${book.bookName}&author=${book.author}&publishTime=${book.publishTime}">淇敼</a></td>&ndash;%&gt;--%>
-      <td><a href="javascript:deleteUser(id=${user.id})">鍒犻櫎</a></td>
-    </tr>
-  </c:forEach>
-  </tbody>
-</table>
-<script type="text/javascript">
-    function deleteUser(id) {
-        var b = window.confirm("浣犵‘瀹氳鍒犻櫎姝よ褰曚箞锛�");
-        if (b) {
-            window.location.href = "DeleteUserServlet?id=" + id;
-        }
-    }
-</script>
+<form id="form1" name="form1" method="post" action="/servletProject/addItem">
+  <label></label>
+  商品:
+  <select name="itemID" id="itemID">
+    <option value="洗衣粉">洗衣粉</option>
+    <option value="香皂">香皂</option>
+    <option value="食用油">食用油</option>
+  </select>
+  <p>数量:
+    <label>
+      <input name="quantity" type="text" id="quantity" value="1" />
+    </label>
+    <label>
+      <input type="submit" name="Submit" value="提交" />
+    </label>
+    <a href="/servletProject/listItem">查看购物车</a></p>
+</form>
 </body>
 </html>
-
 

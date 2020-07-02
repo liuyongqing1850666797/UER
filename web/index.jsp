@@ -7,20 +7,22 @@
 --%>
 <%@ page contentType="text/html; charset=gb2312" language="java" import="java.sql.*" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-  <title>无标题文档</title>
+  <title>shopping cart</title>
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="/servletProject/addItem">
+<form id="form1" name="form1" method="post" action="/gouwuche/addltem">
   <label></label>
   商品:
   <select name="itemID" id="itemID">
-    <option value="洗衣粉">洗衣粉</option>
-    <option value="香皂">香皂</option>
-    <option value="食用油">食用油</option>
+    <option value="果粒橙">果粒橙</option>
+    <option value="农夫山泉">农夫山泉</option>
+    <option value="空调扇">空调扇</option>
+    <option value="HUAWEI nova 7 pro">HUAWEI nova 7 pro</option>
+    <option value="情侣上衣">情侣上衣</option>
   </select>
   <p>数量:
     <label>
@@ -29,7 +31,7 @@
     <label>
       <input type="submit" name="Submit" value="提交" />
     </label>
-    <a href="/servletProject/listItem">查看购物车</a></p>
+    <a href="/gouwuche/listltem">查看购物车</a></p>
 </form>
 </body>
 </html>

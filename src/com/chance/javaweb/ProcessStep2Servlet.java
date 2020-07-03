@@ -9,6 +9,7 @@ package com.chance.javaweb;
         import javax.servlet.http.HttpServletResponse;
         import javax.servlet.http.HttpSession;
 
+@WebServlet({ "/ProcessStep2Servlet", "/processStep2" })
 public class ProcessStep2Servlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -25,7 +26,7 @@ public class ProcessStep2Servlet extends HttpServlet {
         session.setAttribute("customer", customer);
 
         //3.重定向到confirm.jsp页面
-        System.out.println(request.getContextPath() + "/confirm.jsp");
+       // System.out.println(request.getContextPath() + "/confirm.jsp");
         response.sendRedirect(request.getContextPath() + "/confirm.jsp");
     }
 

@@ -22,27 +22,35 @@
         </tr>
         <tr>
             <td>Java</td>
-            <td><input type="checkbox" name="book" value="Java"/></td>
+            <td><input type="checkbox" name="book" value="《Java》"/></td>
         </tr>
         <tr>
             <td>计算机网络自顶向下方法</td>
-            <td><input type="checkbox" name="book" value="计算机网络自顶向下方法"/></td>
+            <td><input type="checkbox" name="book" value="Top-down method for Computer Networks"/></td>
         </tr>
         <tr>
             <td>人工智能技术导论</td>
-            <td><input type="checkbox" name="book" value="人工智能技术导论"/></td>
+            <td><input type="checkbox" name="book" value="Introduction to Artificial Intelligence Technology"/></td>
         </tr>
         <tr>
             <td>软件工程</td>
-            <td><input type="checkbox" name="book" value="软件工程"/></td>
+            <td><input type="checkbox" name="book" value="Software Engineering"/></td>
         </tr>
         <tr>
             <td>数字图像处理</td>
-            <td><input type="checkbox" name="book" value="数字图像处理"/></td>
+            <td><input type="checkbox" name="book" value="Digital Image Processing"/></td>
         </tr>
         <tr>
             <td>嵌入式Linux C语言</td>
-            <td><input type="checkbox" name="book" value="Java"/></td>
+            <td><input type="checkbox" name="book" value="Embedded Linux C Language"/></td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td><input type="checkbox" name="book" value="C++"/></td>
+        </tr>
+        <tr>
+            <td>计算机组成原理</td>
+            <td><input type="checkbox" name="book" value="<<Principies of Computer Organization>>"/></td>
         </tr>
         <tr>
             <td colspan="2">

@@ -37,9 +37,9 @@ public class Customer {
         this.cardType = cardType;
         this.card = card;
     }
-    public Customer() {
+   // public Customer() {
 
-    }
+   //}
 
 }
 

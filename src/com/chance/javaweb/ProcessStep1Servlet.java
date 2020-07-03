@@ -10,9 +10,7 @@ package com.chance.javaweb;
         import javax.servlet.http.HttpServletRequest;
         import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class ProcessStep1Servlet
- */
+
 @WebServlet({ "/ProcessStep1Servlet", "/processStep1" })
 public class ProcessStep1Servlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -23,8 +21,8 @@ public class ProcessStep1Servlet extends HttpServlet {
         //2.把图书信息放入到httpsession中
         request.getSession().setAttribute("books", books);
         //3.重定向到shoppingcar/step-2.jsp
-        System.out.println(request.getContextPath() + "/shoppingcar/step-2.jsp");
-        response.sendRedirect(request.getContextPath() + "/shoppingcar/step-2.jsp");
+        System.out.println(request.getContextPath() + "/step-2.jsp");
+        response.sendRedirect(request.getContextPath() + "/step-2.jsp");
     }
 
 }

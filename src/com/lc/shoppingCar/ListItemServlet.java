@@ -10,7 +10,7 @@ public class ListItemServlet extends HttpServlet
     protected void doGet(HttpServletRequest request,HttpServletResponse response)
             throws ServletException,java.io.IOException
     {
-        ServletContext application=getServletContext() ;
+       ServletContext application=getServletContext() ;
         ServletConfig config=getServletConfig() ;
         response.setContentType("text/html;charset=gb2312");
         PrintWriter out=response.getWriter();

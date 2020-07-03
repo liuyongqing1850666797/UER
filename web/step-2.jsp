@@ -51,11 +51,11 @@
         </tr>
 
         <tr>
-            <td colspan="2"><input type="submit" value="提交"/></td>
+            <td colspan="2"><input type="submit" value="提交"onclick="location.herf='confirm.jsp';"/>
+            </td>
         </tr>
 
     </table>
 </form>
-
 </body>
 </html>

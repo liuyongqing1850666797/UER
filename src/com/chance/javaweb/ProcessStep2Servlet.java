@@ -25,7 +25,8 @@ public class ProcessStep2Servlet extends HttpServlet {
         session.setAttribute("customer", customer);
 
         //3.重定向到confirm.jsp页面
-        response.sendRedirect(request.getContextPath() + "/shoppingcar/confirm.jsp");
+        System.out.println(request.getContextPath() + "/confirm.jsp");
+        response.sendRedirect(request.getContextPath() + "/confirm.jsp");
     }
 
 }

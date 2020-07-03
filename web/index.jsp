@@ -14,16 +14,18 @@
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="/gouwuche/addltem">
+<form id="form1" name="form1" method="post" action="/gouwuche/addItem">
   <label></label>
-  商品:
+ <p> 商品:
   <select name="itemID" id="itemID">
     <option value="果粒橙">果粒橙</option>
     <option value="农夫山泉">农夫山泉</option>
     <option value="空调扇">空调扇</option>
     <option value="HUAWEI nova 7 pro">HUAWEI nova 7 pro</option>
     <option value="情侣上衣">情侣上衣</option>
+
   </select>
+ </p>
   <p>数量:
     <label>
       <input name="quantity" type="text" id="quantity" value="1" />
@@ -31,7 +33,8 @@
     <label>
       <input type="submit" name="Submit" value="提交" />
     </label>
-    <a href="/gouwuche/listltem">查看购物车</a></p>
+    <a href="/gouwuche/listItem">查看购物车</a>
+  </p>
 </form>
 </body>
 </html>

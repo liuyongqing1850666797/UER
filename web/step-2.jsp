@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>step-2</title>
+    <title>填写信息</title>
 </head>
 <body>
 <h2>Step-2: 请输入寄送地址和信用卡信息</h2>

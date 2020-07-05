@@ -15,7 +15,7 @@
     <title>填写信息</title>
 </head>
 <body>
-<h2>Step-2: 请输入寄送地址和信用卡信息</h2>
+<h2>Step-2: 请输入寄送地址和信用卡信息（请全英文填写）</h2>
 <form action="<%=request.getContextPath() %>/processStep2" method="post">
     <table cellpadding="10" cellspacing="0" border="1">
         <tr>
